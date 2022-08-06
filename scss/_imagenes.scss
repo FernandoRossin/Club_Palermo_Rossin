@@ -1,0 +1,28 @@
+
+/* Imagenes */
+
+.contenido {
+     img {
+    border-radius: $spacing-1;
+}
+    p {
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+}
+
+
+@media screen and (max-width:600px) {
+
+/* imagenes */
+
+.contenido {
+    img {
+        border-radius: 5px;
+    }
+    p {
+        font-size: 0.75rem;
+    }
+}
+                
+}

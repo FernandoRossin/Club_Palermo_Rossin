@@ -1,0 +1,411 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.cuerpo {
+  background-color: #ebebc7; }
+  .cuerpo .barranav {
+    background-color: #65ccdf !important; }
+    .cuerpo .barranav .logoclub {
+      object-fit: contain;
+      margin-left: 55px;
+      padding: 5px;
+      border-radius: 10px;
+      animation-name: aparece;
+      animation-duration: 2s; }
+
+@keyframes aparece {
+  0% {
+    transform: translateX(-200px); } }
+
+.main-inicio {
+  min-height: 86vh; }
+
+/* Footer */
+.red-twitter {
+  background-color: #9feeee; }
+
+.red-facebook {
+  background-color: #bec5c5; }
+
+.red-whatsapp {
+  background-color: #a3ebe5; }
+
+.redes, .red-twitter, .red-facebook, .red-whatsapp {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px; }
+
+.redes:hover, .red-twitter:hover, .red-facebook:hover, .red-whatsapp:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  transition-timing-function: ease; }
+
+.contactanos {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  position: fixed;
+  right: 3rem;
+  bottom: 2rem; }
+  .contactanos a img {
+    width: 100%;
+    height: 100%; }
+
+@keyframes giro {
+  25% {
+    transform: rotateZ(-40deg); }
+  75% {
+    transform: rotateZ(40deg); } }
+
+.contactanos:hover {
+  animation-name: giro;
+  animation-duration: 0.5s;
+  animation-timing-function: ease; }
+
+@media screen and (max-width: 1024px) {
+  /* footer  */
+  footer {
+    height: 80px; }
+  .redes, .red-twitter, .red-facebook, .red-whatsapp {
+    width: 40px;
+    height: 40px; }
+  .contactanos {
+    right: 2rem;
+    bottom: 2rem; } }
+
+@media screen and (max-width: 600px) {
+  .redes, .red-twitter, .red-facebook, .red-whatsapp {
+    padding: 0px; }
+  .contactanos {
+    width: 30px;
+    height: 30px;
+    right: 2rem;
+    bottom: 3rem; } }
+
+/* Inicio */
+.inicio div {
+  bottom: 65%;
+  left: 50%;
+  border-radius: 10px;
+  color: #70450c;
+  transform: translate(-50%);
+  background-color: #ebebc7; }
+  .inicio div h1 {
+    font-size: 2rem; }
+
+.intro h3 {
+  text-align: center;
+  padding: 20px;
+  color: #70450c;
+  font-size: 2rem; }
+
+.intro p {
+  padding: 20px;
+  color: #70450c;
+  font-size: 1.75rem; }
+
+@media screen and (max-width: 1024px) {
+  .intro h3 {
+    padding: 10px;
+    font-size: 1rem; }
+  .intro p {
+    padding: 10px;
+    font-size: 1rem; } }
+
+@media screen and (max-width: 600px) {
+  /* Inicio */
+  .inicio div h1 {
+    padding: 3px;
+    font-size: 1rem; }
+  .intro h3 {
+    padding: 5px; }
+  .intro p {
+    padding: 20px; } }
+
+/* Novedades */
+.header-nov {
+  color: #70450c; }
+  .header-nov h1 {
+    padding: 30px;
+    font-size: 3rem; }
+
+.main-novedades {
+  min-height: 72vh; }
+
+.novedad {
+  margin: 15px;
+  padding: 10px;
+  background-color: #aae6cf;
+  border-radius: 5px; }
+  .novedad p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2rem;
+    color: #70450c; }
+
+@media screen and (max-width: 1024px) {
+  /* Novedades */
+  .header-nov h1 {
+    padding: 20px;
+    font-size: 2rem; }
+  .novedad {
+    margin: 5px;
+    padding: 5px; }
+    .novedad p {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 1rem; } }
+
+@media screen and (max-width: 600px) {
+  /* Novedades */
+  .header-nov {
+    padding: 0px; }
+    .header-nov h1 {
+      padding: 10px;
+      font-size: 1.5rem; }
+  .novedad {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 2px; }
+    .novedad img {
+      border-radius: 2px; }
+    .novedad p {
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 0.75rem; } }
+
+/* miembros */
+.titulo-tabla {
+  color: #70450c;
+  font-size: 2rem;
+  padding: 30px; }
+
+.foto-perfil {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px; }
+
+.tabla_miembros {
+  padding: 2px;
+  grid-gap: 2px;
+  background-color: #65ccdf;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  display: grid;
+  grid-template-areas: "titulo-0 titulo-1 titulo-2 titulo-3" "foto-1 nombre-1 apellido-1 numero-1" "foto-2 nombre-2 apellido-2 numero-2" "foto-3 nombre-3 apellido-3 numero-3"; }
+  .tabla_miembros div {
+    background-color: #ebebc7; }
+
+.titulo-0 {
+  grid-area: titulo-0;
+  padding-left: 20px;
+  padding-top: 10px; }
+
+.titulo-1 {
+  grid-area: titulo-1;
+  padding-left: 20px;
+  padding-top: 10px; }
+
+.titulo-2 {
+  grid-area: titulo-2;
+  padding-left: 20px;
+  padding-top: 10px; }
+
+.titulo-3 {
+  grid-area: titulo-3;
+  padding-left: 20px;
+  padding-top: 10px; }
+
+.foto-1 {
+  grid-area: foto-1;
+  padding-left: 80px;
+  padding-top: 25px; }
+
+.nombre-1 {
+  grid-area: nombre-1;
+  padding-left: 60px;
+  padding-top: 50px; }
+
+.apellido-1 {
+  grid-area: apellido-1;
+  padding-left: 60px;
+  padding-top: 50px; }
+
+.numero-1 {
+  grid-area: numero-1;
+  padding-left: 120px;
+  padding-top: 50px; }
+
+.foto-2 {
+  grid-area: foto-2;
+  padding-left: 80px;
+  padding-top: 25px; }
+
+.nombre-2 {
+  grid-area: nombre-2;
+  padding-left: 60px;
+  padding-top: 50px; }
+
+.apellido-2 {
+  grid-area: apellido-2;
+  padding-left: 60px;
+  padding-top: 50px; }
+
+.numero-2 {
+  grid-area: numero-2;
+  padding-left: 120px;
+  padding-top: 50px; }
+
+.foto-3 {
+  grid-area: foto-3;
+  padding-left: 80px;
+  padding-top: 25px; }
+
+.nombre-3 {
+  grid-area: nombre-3;
+  padding-left: 60px;
+  padding-top: 50px; }
+
+.apellido-3 {
+  grid-area: apellido-3;
+  padding-left: 60px;
+  padding-top: 50px; }
+
+.numero-3 {
+  grid-area: numero-3;
+  padding-left: 120px;
+  padding-top: 50px; }
+
+.titulo {
+  font-size: 1rem; }
+
+.dato {
+  font-size: 1rem; }
+
+@media screen and (max-width: 1024px) {
+  /* miembros */
+  .titulo-tabla {
+    display: none; }
+  .foto-principal {
+    display: none; }
+  /* gird 2 */
+  .tabla_miembros {
+    padding: 2px;
+    grid-template-rows: 30px 1fr 1fr 1fr; }
+  .titulo-0 {
+    grid-area: titulo-0;
+    padding-left: 80px;
+    padding-top: 5px; }
+  .titulo-1 {
+    grid-area: titulo-1;
+    padding-left: 50px;
+    padding-top: 5px; }
+  .titulo-2 {
+    grid-area: titulo-2;
+    padding-left: 50px;
+    padding-top: 5px; }
+  .titulo-3 {
+    grid-area: titulo-3;
+    padding-left: 50px;
+    padding-top: 5px; }
+  .foto-1 {
+    padding-left: 50px; }
+  .foto-2 {
+    padding-left: 50px; }
+  .foto-3 {
+    padding-left: 50px; }
+  .titulo {
+    font-size: 1rem; }
+  .dato {
+    font-size: 0.75rem; } }
+
+@media screen and (max-width: 600px) {
+  /* miembros */
+  .titulo-tabla {
+    padding: 0px; }
+  /* gird 2 */
+  .tabla_miembros {
+    padding-left: 30px;
+    width: 50%;
+    background-color: #ebebc7;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "foto-1 nombre-1" "foto-1 apellido-1" "foto-2 nombre-2" "foto-2 apellido-2" "foto-3 nombre-3" "foto-3 apellido-3"; }
+  .titulo-0 {
+    display: none; }
+  .titulo-1 {
+    display: none; }
+  .titulo-2 {
+    display: none; }
+  .titulo-3 {
+    display: none; }
+  .foto-1 {
+    grid-area: foto-1;
+    padding-left: 80px;
+    padding-top: 25px; }
+  .nombre-1 {
+    grid-area: nombre-1;
+    padding-left: 30px;
+    padding-top: 50px; }
+  .apellido-1 {
+    grid-area: apellido-1;
+    padding-left: 30px;
+    padding-top: 0px; }
+  .numero-1 {
+    display: none; }
+  .foto-2 {
+    grid-area: foto-2;
+    padding-left: 80px;
+    padding-top: 25px; }
+  .nombre-2 {
+    grid-area: nombre-2;
+    padding-left: 30px;
+    padding-top: 50px; }
+  .apellido-2 {
+    grid-area: apellido-2;
+    padding-left: 30px;
+    padding-top: 0px; }
+  .numero-2 {
+    display: none; }
+  .foto-3 {
+    grid-area: foto-3;
+    padding-left: 80px;
+    padding-top: 25px; }
+  .nombre-3 {
+    grid-area: nombre-3;
+    padding-left: 30px;
+    padding-top: 50px; }
+  .apellido-3 {
+    grid-area: apellido-3;
+    padding-left: 30px;
+    padding-top: 0px; }
+  .numero-3 {
+    display: none; }
+  .dato {
+    font-size: 1.5rem; } }
+
+/* Imagenes */
+.contenido img {
+  border-radius: 10px; }
+
+.contenido p {
+  padding-bottom: 15px;
+  padding-top: 5px; }
+
+@media screen and (max-width: 600px) {
+  /* imagenes */
+  .contenido img {
+    border-radius: 5px; }
+  .contenido p {
+    font-size: 0.75rem; } }
+
+.main-contacto {
+  min-height: 72vh; }
+
+@media screen and (max-width: 1024px) {
+  /* contacto */
+  .formulario div label {
+    padding: 10px; } }

@@ -1,0 +1,42 @@
+
+### SEO ###
+
+-Favicon: agregado en todas las páginas
+
+-index.html
+    -Agregue keywords: "running, club, palermo, carreras, maratón"
+    -Agregue description: Página de inicio del Club de corredores en el barrio de Palermo
+    -Modifique Title: Inicio Club Palermo
+
+-novedades.html
+    -Agregue keywords: running, club, palermo, carreras, maratón, novedades, noticias
+    -Agregue description: Novedades sobre próximas carreras y novedades
+    -Modifique Title: Novedades Club Palermo
+
+-miembros.html
+    -Agregue keywords: running, club, palermo, carreras, maratón, miembros, corredores
+    -Agregue description: Te presentamos a los miembros de nuestro club
+    -Modifique Title: Miembros Club Palermo
+
+-imagenes.html
+    -Agregue keywords: running, club, palermo, carreras, maratón, fotos, recuerdos
+    -Agregue description: Acá podés encontrar las mejores imagenes de los eventos
+    -Modifique Title: Imagenes Club Palermo
+
+-contacto.html
+    -Agregue keywords: running, club, palermo, carreras, maratón, contacto, consultas, dudas
+    -Agregue description: Esta es nuestra página de contacto para que puedas evacuar tus dudas
+    -Modifique Title: Contacto Club Palermo
+
+
+
+### SASS ###
+
+-mapa: utilicé un mapa para darle background-color a los links de redes sociales en "_footer.scss"
+
+-mixin: utilicé mixin para dar padding-left y padding-top en "_miembros.scss"
+
+-extend: utilicé extend dentro del each del mapa para las dimensiones de los enlaces de redes
+
+
+

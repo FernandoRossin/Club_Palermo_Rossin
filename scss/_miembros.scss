@@ -1,0 +1,283 @@
+
+
+//###### mixin ######
+
+@mixin espacio($left,$top) {
+    padding-left: $left;
+    padding-top: $top;    
+}
+
+/* miembros */
+
+.titulo-tabla {
+    color: $color-1;
+    font-size: 2rem;
+    padding: 30px;
+    }
+
+.foto-perfil {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.tabla_miembros {
+    padding: 2px;
+    grid-gap: 2px;
+    background-color: rgb(101, 204, 223);
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    display: grid;  
+    grid-template-areas: 
+    "titulo-0 titulo-1 titulo-2 titulo-3"
+    "foto-1 nombre-1 apellido-1 numero-1"
+    "foto-2 nombre-2 apellido-2 numero-2"
+    "foto-3 nombre-3 apellido-3 numero-3"
+    ;
+    div{
+        background-color: $color-2;
+        
+    }
+}
+
+
+.titulo-0{
+    grid-area: titulo-0;
+    @include espacio(20px,10px)   
+}
+.titulo-1{
+    grid-area: titulo-1;
+    @include espacio(20px,10px)   
+}
+.titulo-2{
+    grid-area: titulo-2;
+    @include espacio(20px,10px)   
+}
+.titulo-3{
+    grid-area: titulo-3;
+    @include espacio(20px,10px)   
+}
+
+.foto-1{
+    grid-area: foto-1;
+    @include espacio(80px,25px)   
+}
+.nombre-1 {
+    grid-area: nombre-1;
+    @include espacio(60px,50px)   
+}
+.apellido-1 {
+    grid-area: apellido-1;
+    @include espacio(60px,50px)
+ }
+.numero-1 {
+    grid-area: numero-1;
+    @include espacio(120px,50px)
+}
+
+.foto-2{
+    grid-area: foto-2;
+    @include espacio(80px,25px)
+}
+.nombre-2 {
+    grid-area: nombre-2;
+    @include espacio(60px,50px)
+}
+.apellido-2 {
+    grid-area: apellido-2;
+    @include espacio(60px,50px)
+}
+.numero-2 {
+    grid-area: numero-2;
+    @include espacio(120px,50px)
+}
+
+.foto-3{
+    grid-area: foto-3;
+    @include espacio(80px,25px)
+}
+.nombre-3 {
+    grid-area: nombre-3;
+    @include espacio(60px,50px)
+}
+.apellido-3 {
+    grid-area: apellido-3;
+    @include espacio(60px,50px)
+}
+.numero-3 {
+    grid-area: numero-3;
+    @include espacio(120px,50px)
+}
+
+
+
+.titulo {
+    font-size: 1rem;
+}
+
+.dato {
+    font-size: 1rem;
+}
+
+@media screen and (max-width:1024px ) {
+
+/* miembros */
+
+.titulo-tabla {
+    display: none;
+}
+
+.foto-principal {
+    display: none;
+}
+
+                                            /* gird 2 */
+
+.tabla_miembros {
+    padding: 2px;
+    grid-template-rows: 30px 1fr 1fr 1fr;
+}
+
+
+.titulo-0{
+    grid-area: titulo-0;
+    @include espacio(80px,5px)
+}
+.titulo-1{
+    grid-area: titulo-1;
+    @include espacio(50px,5px)
+}
+.titulo-2{
+    grid-area: titulo-2;
+    @include espacio(50px,5px)
+}
+.titulo-3{
+    grid-area: titulo-3;
+    @include espacio(50px,5px)
+}
+
+.foto-1{
+    padding-left: $spacing-5;
+}
+
+.foto-2{
+    padding-left: $spacing-5;
+}
+
+.foto-3{
+    padding-left: $spacing-5;
+}
+
+.titulo {
+    font-size: 1rem;
+}
+
+.dato {
+    font-size: 0.75rem;
+}
+}    
+
+
+@media screen and (max-width:600px) {
+
+/* miembros */
+ 
+.titulo-tabla {
+    padding: 0px;
+}
+
+         /* gird 2 */
+
+.tabla_miembros {
+    padding-left: 30px;
+    width: 50%;
+    background-color: $color-2;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: 
+    "foto-1 nombre-1"
+    "foto-1 apellido-1"
+    "foto-2 nombre-2"
+    "foto-2 apellido-2"
+    "foto-3 nombre-3"
+    "foto-3 apellido-3"
+    ;
+} 
+
+
+.titulo-0{
+    display: none;
+}
+
+.titulo-1{
+    display: none;
+}
+
+.titulo-2{
+    display: none;
+}
+
+.titulo-3{
+    display: none;
+} 
+
+.foto-1{
+    grid-area: foto-1;
+    @include espacio(80px,25px)
+}
+
+.nombre-1 {
+    grid-area: nombre-1;
+    @include espacio(30px,50px)
+}
+
+.apellido-1 {
+    grid-area: apellido-1;
+    @include espacio(30px,0px)
+}
+
+.numero-1 {
+    display: none;
+} 
+
+.foto-2{
+    grid-area: foto-2;
+    @include espacio(80px,25px)
+}
+
+.nombre-2 {
+    grid-area: nombre-2;
+    @include espacio(30px,50px)
+}
+
+.apellido-2 {
+    grid-area: apellido-2;
+    @include espacio(30px,0px)
+}
+
+.numero-2 {
+    display: none;
+} 
+
+.foto-3{
+    grid-area: foto-3;
+    @include espacio(80px,25px)
+}
+
+.nombre-3 {
+    grid-area: nombre-3;
+    @include espacio(30px,50px)
+}
+
+.apellido-3 {
+    grid-area: apellido-3;
+    @include espacio(30px,0px)
+}
+
+.numero-3 {
+    display: none;
+}  
+
+.dato {
+    font-size: 1.5rem;
+}  
+}

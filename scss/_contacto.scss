@@ -1,0 +1,17 @@
+
+.main-contacto{
+    min-height: 72vh;
+}
+
+
+@media screen and (max-width:1024px ) {
+
+/* contacto */
+
+.formulario div label{
+        padding: $spacing-1;
+    }
+    
+}
+
+
