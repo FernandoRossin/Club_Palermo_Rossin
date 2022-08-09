@@ -126,6 +126,9 @@
   .intro p {
     padding: 20px; } }
 
+.espaciado {
+  margin-top: 100px !important; }
+
 /* Novedades */
 .header-nov {
   color: #70450c; }
