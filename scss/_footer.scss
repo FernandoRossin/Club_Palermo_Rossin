@@ -6,7 +6,6 @@ $color-red: (
     twitter: rgb(159, 238, 238),
     facebook: rgb(190, 197, 197),
     whatsapp: rgb(163, 235, 229),
-    // contacto: rgba(233, 241, 112, 0.842),
 );
 
 @each $i, $color in $color-red {

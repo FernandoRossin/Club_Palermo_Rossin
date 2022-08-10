@@ -108,6 +108,9 @@
   color: #70450c;
   font-size: 1.75rem; }
 
+.espaciado {
+  margin-top: 50px !important; }
+
 @media screen and (max-width: 1024px) {
   .intro h3 {
     padding: 10px;
@@ -125,9 +128,6 @@
     padding: 5px; }
   .intro p {
     padding: 20px; } }
-
-.espaciado {
-  margin-top: 100px !important; }
 
 /* Novedades */
 .header-nov {
