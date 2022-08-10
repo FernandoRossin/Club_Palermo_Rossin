@@ -19,9 +19,6 @@
   0% {
     transform: translateX(-200px); } }
 
-.main-inicio {
-  min-height: 86vh; }
-
 /* Footer */
 .red-twitter {
   background-color: #9feeee; }
@@ -87,6 +84,9 @@
     bottom: 3rem; } }
 
 /* Inicio */
+.main-inicio {
+  min-height: 80vh; }
+
 .inicio div {
   bottom: 65%;
   left: 50%;
@@ -97,16 +97,21 @@
   .inicio div h1 {
     font-size: 2rem; }
 
-.intro h3 {
-  text-align: center;
-  padding: 20px;
-  color: #70450c;
-  font-size: 2rem; }
+.inicio img {
+  border-radius: 20px; }
 
-.intro p {
-  padding: 20px;
-  color: #70450c;
-  font-size: 1.75rem; }
+.intro {
+  background-color: rgba(101, 154, 223, 0.329);
+  border-radius: 20px; }
+  .intro h3 {
+    text-align: center;
+    padding: 20px;
+    color: #70450c;
+    font-size: 2rem; }
+  .intro p {
+    padding: 20px;
+    color: #70450c;
+    font-size: 1.75rem; }
 
 .espaciado {
   margin-top: 50px !important; }

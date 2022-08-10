@@ -1,8 +1,12 @@
 
 /* Inicio */
+.main-inicio{
+    min-height: 80vh;
+}
 
-.inicio div {
-    bottom: 65%;
+.inicio{
+    div {
+    bottom: 65%;    
     left: 50%;
     border-radius: $spacing-1;
     color: $color-1;
@@ -12,10 +16,15 @@
         font-size: 2rem;
     }
 }
-
+    img{
+    border-radius: 20px;
+    }
+}
 
 
 .intro {
+    background-color: rgba(101, 154, 223, 0.329);
+    border-radius: 20px;
     h3 {
     text-align: center;
     padding: $spacing-2;
