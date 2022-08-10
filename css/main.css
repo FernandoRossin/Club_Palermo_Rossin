@@ -101,7 +101,7 @@
   border-radius: 20px; }
 
 .intro {
-  background-color: rgba(101, 154, 223, 0.329);
+  background-color: #aae6cf;
   border-radius: 20px; }
   .intro h3 {
     text-align: center;
@@ -155,7 +155,7 @@
     font-size: 1.2rem;
     color: #70450c; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
   /* Novedades */
   .header-nov h1 {
     padding: 20px;
@@ -209,83 +209,83 @@
 
 .titulo-0 {
   grid-area: titulo-0;
-  padding-left: 20px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  text-align: center; }
 
 .titulo-1 {
   grid-area: titulo-1;
-  padding-left: 20px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  text-align: center; }
 
 .titulo-2 {
   grid-area: titulo-2;
-  padding-left: 20px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  text-align: center; }
 
 .titulo-3 {
   grid-area: titulo-3;
-  padding-left: 20px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  text-align: center; }
 
 .foto-1 {
   grid-area: foto-1;
-  padding-left: 80px;
-  padding-top: 25px; }
+  padding-top: 25px;
+  text-align: center; }
 
 .nombre-1 {
   grid-area: nombre-1;
-  padding-left: 60px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  text-align: center; }
 
 .apellido-1 {
   grid-area: apellido-1;
-  padding-left: 60px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  text-align: center; }
 
 .numero-1 {
   grid-area: numero-1;
-  padding-left: 120px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  text-align: center; }
 
 .foto-2 {
   grid-area: foto-2;
-  padding-left: 80px;
-  padding-top: 25px; }
+  padding-top: 25px;
+  text-align: center; }
 
 .nombre-2 {
   grid-area: nombre-2;
-  padding-left: 60px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  text-align: center; }
 
 .apellido-2 {
   grid-area: apellido-2;
-  padding-left: 60px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  text-align: center; }
 
 .numero-2 {
   grid-area: numero-2;
-  padding-left: 120px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  text-align: center; }
 
 .foto-3 {
   grid-area: foto-3;
-  padding-left: 80px;
-  padding-top: 25px; }
+  padding-top: 25px;
+  text-align: center; }
 
 .nombre-3 {
   grid-area: nombre-3;
-  padding-left: 60px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  text-align: center; }
 
 .apellido-3 {
   grid-area: apellido-3;
-  padding-left: 60px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  text-align: center; }
 
 .numero-3 {
   grid-area: numero-3;
-  padding-left: 120px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  text-align: center; }
 
 .titulo {
   font-size: 1rem; }
@@ -305,28 +305,29 @@
     grid-template-rows: 30px 1fr 1fr 1fr; }
   .titulo-0 {
     grid-area: titulo-0;
-    padding-left: 80px;
-    padding-top: 5px; }
+    padding-top: 5px;
+    text-align: center; }
   .titulo-1 {
     grid-area: titulo-1;
-    padding-left: 50px;
-    padding-top: 5px; }
+    padding-top: 5px;
+    text-align: center; }
   .titulo-2 {
     grid-area: titulo-2;
-    padding-left: 50px;
-    padding-top: 5px; }
+    padding-top: 5px;
+    text-align: center; }
   .titulo-3 {
     grid-area: titulo-3;
-    padding-left: 50px;
-    padding-top: 5px; }
+    padding-top: 5px;
+    text-align: center; }
   .foto-1 {
-    padding-left: 50px; }
+    padding-top: 10px;
+    text-align: center; }
   .foto-2 {
-    padding-left: 50px; }
+    padding-top: 10px;
+    text-align: center; }
   .foto-3 {
-    padding-left: 50px; }
-  .titulo {
-    font-size: 1rem; }
+    padding-top: 10px;
+    text-align: center; }
   .dato {
     font-size: 0.75rem; } }
 
@@ -337,7 +338,6 @@
   /* gird 2 */
   .tabla_miembros {
     padding-left: 30px;
-    width: 50%;
     background-color: #ebebc7;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: 1fr 1fr;
@@ -352,44 +352,44 @@
     display: none; }
   .foto-1 {
     grid-area: foto-1;
-    padding-left: 80px;
-    padding-top: 25px; }
+    padding-top: 25px;
+    text-align: center; }
   .nombre-1 {
     grid-area: nombre-1;
-    padding-left: 30px;
-    padding-top: 50px; }
+    padding-top: 50px;
+    text-align: center; }
   .apellido-1 {
     grid-area: apellido-1;
-    padding-left: 30px;
-    padding-top: 0px; }
+    padding-top: 0px;
+    text-align: center; }
   .numero-1 {
     display: none; }
   .foto-2 {
     grid-area: foto-2;
-    padding-left: 80px;
-    padding-top: 25px; }
+    padding-top: 25px;
+    text-align: center; }
   .nombre-2 {
     grid-area: nombre-2;
-    padding-left: 30px;
-    padding-top: 50px; }
+    padding-top: 50px;
+    text-align: center; }
   .apellido-2 {
     grid-area: apellido-2;
-    padding-left: 30px;
-    padding-top: 0px; }
+    padding-top: 0px;
+    text-align: center; }
   .numero-2 {
     display: none; }
   .foto-3 {
     grid-area: foto-3;
-    padding-left: 80px;
-    padding-top: 25px; }
+    padding-top: 25px;
+    text-align: center; }
   .nombre-3 {
     grid-area: nombre-3;
-    padding-left: 30px;
-    padding-top: 50px; }
+    padding-top: 50px;
+    text-align: center; }
   .apellido-3 {
     grid-area: apellido-3;
-    padding-left: 30px;
-    padding-top: 0px; }
+    padding-top: 0px;
+    text-align: center; }
   .numero-3 {
     display: none; }
   .dato {

@@ -2,9 +2,9 @@
 
 //###### mixin ######
 
-@mixin espacio($left,$top) {
-    padding-left: $left;
-    padding-top: $top;    
+@mixin espacio($top) {
+    padding-top: $top;
+    text-align: center;    
 }
 
 /* miembros */
@@ -42,70 +42,70 @@
 
 .titulo-0{
     grid-area: titulo-0;
-    @include espacio(20px,10px)   
+    @include espacio(10px)   
 }
 .titulo-1{
     grid-area: titulo-1;
-    @include espacio(20px,10px)   
+    @include espacio(10px)   
 }
 .titulo-2{
     grid-area: titulo-2;
-    @include espacio(20px,10px)   
+    @include espacio(10px)   
 }
 .titulo-3{
     grid-area: titulo-3;
-    @include espacio(20px,10px)   
+    @include espacio(10px)   
 }
 
 .foto-1{
     grid-area: foto-1;
-    @include espacio(80px,25px)   
+    @include espacio(25px)   
 }
 .nombre-1 {
     grid-area: nombre-1;
-    @include espacio(60px,50px)   
+    @include espacio(50px)   
 }
 .apellido-1 {
     grid-area: apellido-1;
-    @include espacio(60px,50px)
+    @include espacio(50px)
  }
 .numero-1 {
     grid-area: numero-1;
-    @include espacio(120px,50px)
+    @include espacio(50px)
 }
 
 .foto-2{
     grid-area: foto-2;
-    @include espacio(80px,25px)
+    @include espacio(25px)
 }
 .nombre-2 {
     grid-area: nombre-2;
-    @include espacio(60px,50px)
+    @include espacio(50px)
 }
 .apellido-2 {
     grid-area: apellido-2;
-    @include espacio(60px,50px)
+    @include espacio(50px)
 }
 .numero-2 {
     grid-area: numero-2;
-    @include espacio(120px,50px)
+    @include espacio(50px)
 }
 
 .foto-3{
     grid-area: foto-3;
-    @include espacio(80px,25px)
+    @include espacio(25px)
 }
 .nombre-3 {
     grid-area: nombre-3;
-    @include espacio(60px,50px)
+    @include espacio(50px)
 }
 .apellido-3 {
     grid-area: apellido-3;
-    @include espacio(60px,50px)
+    @include espacio(50px)
 }
 .numero-3 {
     grid-area: numero-3;
-    @include espacio(120px,50px)
+    @include espacio(50px)
 }
 
 
@@ -140,35 +140,31 @@
 
 .titulo-0{
     grid-area: titulo-0;
-    @include espacio(80px,5px)
+    @include espacio(5px)
 }
 .titulo-1{
     grid-area: titulo-1;
-    @include espacio(50px,5px)
+    @include espacio(5px)
 }
 .titulo-2{
     grid-area: titulo-2;
-    @include espacio(50px,5px)
+    @include espacio(5px)
 }
 .titulo-3{
     grid-area: titulo-3;
-    @include espacio(50px,5px)
+    @include espacio(5px)
 }
 
 .foto-1{
-    padding-left: $spacing-5;
+    @include espacio(10px)
 }
 
 .foto-2{
-    padding-left: $spacing-5;
+    @include espacio(10px)
 }
 
 .foto-3{
-    padding-left: $spacing-5;
-}
-
-.titulo {
-    font-size: 1rem;
+    @include espacio(10px)
 }
 
 .dato {
@@ -189,7 +185,6 @@
 
 .tabla_miembros {
     padding-left: 30px;
-    width: 50%;
     background-color: $color-2;
     grid-template-rows: repeat(6,1fr);
     grid-template-columns: 1fr 1fr; 
@@ -222,17 +217,17 @@
 
 .foto-1{
     grid-area: foto-1;
-    @include espacio(80px,25px)
+    @include espacio(25px)
 }
 
 .nombre-1 {
     grid-area: nombre-1;
-    @include espacio(30px,50px)
+    @include espacio(50px)
 }
 
 .apellido-1 {
     grid-area: apellido-1;
-    @include espacio(30px,0px)
+    @include espacio(0px)
 }
 
 .numero-1 {
@@ -241,17 +236,17 @@
 
 .foto-2{
     grid-area: foto-2;
-    @include espacio(80px,25px)
+    @include espacio(25px)
 }
 
 .nombre-2 {
     grid-area: nombre-2;
-    @include espacio(30px,50px)
+    @include espacio(50px)
 }
 
 .apellido-2 {
     grid-area: apellido-2;
-    @include espacio(30px,0px)
+    @include espacio(0px)
 }
 
 .numero-2 {
@@ -260,17 +255,17 @@
 
 .foto-3{
     grid-area: foto-3;
-    @include espacio(80px,25px)
+    @include espacio(25px)
 }
 
 .nombre-3 {
     grid-area: nombre-3;
-    @include espacio(30px,50px)
+    @include espacio(50px)
 }
 
 .apellido-3 {
     grid-area: apellido-3;
-    @include espacio(30px,0px)
+    @include espacio(0px)
 }
 
 .numero-3 {
