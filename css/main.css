@@ -182,9 +182,8 @@
     .novedad img {
       border-radius: 2px; }
     .novedad p {
-      padding-left: 5px;
-      padding-right: 5px;
-      font-size: 0.75rem; } }
+      padding-left: 2px;
+      padding-right: 2px; } }
 
 /* miembros */
 .titulo-tabla {
@@ -406,9 +405,7 @@
 @media screen and (max-width: 600px) {
   /* imagenes */
   .contenido img {
-    border-radius: 5px; }
-  .contenido p {
-    font-size: 0.75rem; } }
+    border-radius: 5px; } }
 
 .main-contacto {
   min-height: 72vh; }
